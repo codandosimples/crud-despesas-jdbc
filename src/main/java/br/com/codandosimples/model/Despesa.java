@@ -18,7 +18,9 @@ public class Despesa {
         this.categoria = categoria;
     }
 
-    public Despesa(){}
+    public Despesa(String descricao, LocalDate data, double valor, Categoria categoria) {
+        this(null, descricao, data, valor, categoria);
+    }
 
     public Long getId() {
         return id;
